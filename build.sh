@@ -18,7 +18,7 @@ mkdir -p ./data/{minio,nginx}
 
 echo $PRE Checkout excalidraw repo...
 if [ ! -d "$SRC_REPO/excalidraw" ]; then
-    git clone https://github.com/excalidraw/excalidraw.git $SRC_REPO/excalidraw
+    git clone  -b v0.10.0 https://github.com/excalidraw/excalidraw.git $SRC_REPO/excalidraw
     ln -s $SRC_REPO/excalidraw $DIR/excalidraw
 fi
 
