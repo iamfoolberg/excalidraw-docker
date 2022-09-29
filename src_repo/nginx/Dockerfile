@@ -1,8 +1,8 @@
 ARG BUILDREPO=localbuild
 FROM ${BUILDREPO}/base:latest
 
-ADD https://raw.githubusercontent.com/acmesh-official/acme.sh/2.8.8/acme.sh /opt
-
+#ADD https://raw.githubusercontent.com/acmesh-official/acme.sh/2.8.8/acme.sh /opt
+ADD ./acme.sh /opt
 COPY rootfs/ /
 
 RUN \
